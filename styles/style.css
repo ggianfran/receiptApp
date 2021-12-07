@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  margin: 5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+div.category-indicator {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+div.template {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

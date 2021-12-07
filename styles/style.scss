@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+$col1: #053742;
+$col2: #39a2db;
+$col3: #a2dbfa;
+$col4: #e8f0f2;
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  margin: 5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+// .main-container {
+//   // border-style: solid;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+// }
+
+// Styling of the category color indicators
+div.category-indicator {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+// Hide the template entry div
+div.template {
+  display: none;
+}
