@@ -26,6 +26,7 @@ function initialize() {
       $("#form-input").parent().parent().attr("category")
     ); // Create new entry
     $("#form-input")[0].value = ""; // Empty the form
+    changeCategory(0);
   });
 
   document.addEventListener("keydown", (e) => {
@@ -140,9 +141,12 @@ function updateLS() {
   localStorage.setItem("categories", JSON.stringify(categories));
 }
 
-function changeCategory() {
+function changeCategory(catNum) {
   let focusedDiv = $("input:focus:not(.category)").parents("div.entry");
   let newCat = (parseInt(focusedDiv.attr("category")) + 1) % numOfCats;
+  if (catNum !== undefined) {
+    newCat = catNum % numOfCats; 
+  }
   if (isNaN(newCat)) {
     return;
   }
@@ -151,3 +155,4 @@ function changeCategory() {
     .children("div.category-indicator")
     .css("background-color", catcolors[newCat]);
 }
+
